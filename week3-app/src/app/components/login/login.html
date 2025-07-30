@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>{{title()}} 3813ICT - Week 3 Demo</h1>
+    <div class="form-group">
+        <label class="form-label" for="email">Email Address</label>
+        <input type="email" [(ngModel)]="email" id="email" name="email" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="email">Password</label>
+        <input type="password" [(ngModel)]="pwd" id="pwd" name="pwd" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" (click)="login($event)" >Login</button>
+    </div>
+
+    <div>{{errormsg}} </div>
+</div>
